@@ -1,0 +1,60 @@
+body {
+    background-color: white;
+}
+
+.homeMain {
+
+}
+
+.homeTitle {
+    text-align: center;
+    font-size: 25px; /* Шрифт заголовка для обычных экранов */
+}
+
+.homeImg {
+    text-align: center;
+}
+
+.homeImg img {
+    transition: background-color 0.3s, transform 0.2s;
+    margin-right: 30px;
+    margin-left: 30px;
+    border: lightgrey solid 2px;
+    border-radius: 15px;
+    width: 420px; /* Фиксированная ширина для больших экранов */
+    height: 500px;
+}
+
+.homeImg img:hover {
+    transform: scale(1.1);
+}
+
+.homeTitle {
+    font-family: "Brush Script MT", cursive;
+    font-size: 42px; /* Размер шрифта для больших экранов */
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .homeTitle {
+        font-size: 28px; /* Уменьшаем размер шрифта заголовка на мобильных */
+    }
+
+    .homeImg img {
+        width: 90%; /* Ставим ширину изображения на 90% для лучшей адаптивности */
+        height: auto; /* Убираем фиксированную высоту для сохранения пропорций */
+        margin-right: 0; /* Убираем отступ справа */
+        margin-left: 0; /* Убираем отступ слева */
+        margin-bottom: 15px; /* Добавляем отступ снизу для разделения изображений */
+    }
+}
+
+@media (max-width: 480px) {
+    .homeTitle {
+        font-size: 24px; /* Дополнительное уменьшение размера заголовка для маленьких экранов */
+    }
+
+    .homeImg img {
+        width: 100%; /* Изображение занимает всю ширину экрана на маленьких устройствах */
+    }
+}
