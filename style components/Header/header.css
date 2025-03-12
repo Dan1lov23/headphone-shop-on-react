@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.headerMain {
+    display: flex;
+    justify-content: space-between; /* Выравнивание между элементами */
+    align-items: center;
+    background-color: #2980b9;
+    color: white;
+    padding: 15px 20px;
+    width: 100%;
+    height: 5vh;
+}
+
+.headerMain ul {
+    margin-left: 650px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.headerMain li {
+    margin: 25px 50px;
+    font-size: 24px;
+}
+
+.headerMain a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.headerMain a:hover {
+    color: #f39c12;
+}
+
+.headerMain img {
+    margin-right: 10px; /* Уменьшите отступ справа от логотипа */
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    border: 4px solid black;
+}
+
+.headerMainLogoTitle {
+    text-align: left;
+    margin-left: 10px; /* Отступ для текста */
+    font-family: "Brush Script MT", cursive;
+    font-size: 32px;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .headerMain {
+        justify-content: space-between; /* Элементы будут располагаться с равными отступами */
+        padding: 10px; /* Уменьшение отступов */
+        height: auto; /* Высота адаптируется под контент */
+    }
+
+    .headerMain ul {
+        margin-left: 0; /* Убираем отступ слева */
+        margin-top: 0; /* Убираем отступ сверху для списка */
+        flex-direction: row; /* Горизонтальное расположение элементов списка */
+        align-items: center; /* Выравнивание по центру по вертикали */
+        flex-wrap: wrap; /* Позволяет элементам переходить на следующую строку при нехватке места */
+        width: 100%; /* Занимаем ширину родителя */
+    }
+
+    .headerMain li {
+        margin: 10px 20px; /* Уменьшаем отступы между элементами списка */
+        font-size: 18px; /* Уменьшаем размер шрифта */
+    }
+
+    .headerMain img {
+        width: 40px; /* Уменьшаем размер изображения */
+        height: 40px; /* Уменьшаем высоту изображения */
+    }
+
+    .headerMainLogoTitle {
+        font-size: 24px; /* Уменьшаем размер шрифта заголовка */
+    }
+}
+
+@media (max-width: 480px) {
+    .headerMain li {
+        margin-top: 30px;
+        font-size: 16px; /* Дополнительное уменьшение размера шрифта */
+    }
+
+    .headerMainLogoTitle {
+        font-size: 15px; /* Дополнительное уменьшение размера заголовка */
+    }
+
+    .headerMain img {
+        width: 30px; /* Еще меньше размеры изображения для маленьких экранов */
+        height: 30px; /* Соответствующая высота изображения */
+    }
+}

@@ -1,0 +1,90 @@
+.mainFooter {
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    height: auto; /* Изменили с 100% на auto, чтобы адаптировать высоту под контент */
+    background-color: #2980b9;
+    padding: 20px; /* Увеличиваем отступы для удобства */
+}
+
+.footerTitle {
+    font-family: "Brush Script MT", cursive;
+    font-size: 42px;
+    color: white;
+}
+
+.footerContactsTitle {
+    font-size: 22px;
+    color: white;
+}
+
+.footerContacts {
+    h1 {
+        color: white;
+        font-size: 52px;
+    }
+    ul {
+        list-style: none;
+        padding: 0; /* Убираем отступы */
+        display: flex; /* Используем Flexbox для списка */
+    }
+    a {
+        color: white;
+        font-size: 60px;
+    }
+    a:hover {
+        color: black;
+    }
+    li {
+        margin: 0 15px; /* Отступы между иконками */
+    }
+    display: flex; /* Используем Flexbox для расположения иконок в ряд */
+    flex-direction: row; /* Горизонтальное расположение */
+    justify-content: center; /* Центрирование иконок по горизонтали */
+    margin-top: 10px; /* Отступ сверху */
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .footerTitle {
+        font-size: 32px; /* Уменьшаем размер шрифта заголовка для мобильных устройств */
+    }
+
+    .footerContactsTitle {
+        font-size: 18px; /* Уменьшаем размер шрифта для контактов */
+    }
+
+    .footerContacts h1 {
+        font-size: 36px; /* Уменьшаем размер шрифта для заголовка контактов */
+    }
+
+    .footerContacts a {
+        font-size: 40px; /* Уменьшаем размер шрифта для ссылок контактов */
+    }
+
+    .footerContacts li {
+        margin: 0 10px; /* Уменьшаем отступы между иконками на мобильных устройствах */
+    }
+}
+
+@media (max-width: 480px) {
+    .footerTitle {
+        font-size: 28px; /* Дополнительное уменьшение размера заголовка */
+    }
+
+    .footerContactsTitle {
+        font-size: 16px; /* Дополнительное уменьшение размера для контактов */
+    }
+
+    .footerContacts h1 {
+        font-size: 28px; /* Дополнительное уменьшение размера для заголовка контактов */
+    }
+
+    .footerContacts a {
+        font-size: 32px; /* Дополнительное уменьшение размера для ссылок */
+    }
+
+    .footerContacts li {
+        margin: 0 5px; /* Уменьшаем пространство между иконками */
+    }
+}
